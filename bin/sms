@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require File.expand_path('../../config/environment', __FILE__)
+require 'sneakers/runner'
+
+r = Sneakers::Runner.new([ Sms::Worker ])
+r.run

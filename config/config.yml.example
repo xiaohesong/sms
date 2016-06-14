@@ -1,0 +1,17 @@
+defaults: &defaults
+  host: "http://localhost:3000"
+  username: "xiaozhu"
+  password: "xiaozhu"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+  host: "http://staging.open.ceshi.com"
